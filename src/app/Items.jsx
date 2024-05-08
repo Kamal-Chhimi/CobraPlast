@@ -74,7 +74,7 @@ function Items() {
   return (
     <div className='container grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1'>
       {images.map((image, index) => (
-        <div key={index} className="flex justify-center items-center border-x-8 border border-blue-300 text-2xl">
+        <div key={index} className="flex justify-center items-center border-x-8 border border-blue-300 text-2xl hover:bg-blue-300 transition ease-in sm:hover:translate-x-2 sm:hover:translate-y-1">
           <Image loading="lazy" src={image.src} alt={`Image ${index + 1}`} className='sm:w-2/6 w-4/12' />
           <p>{image.volume}--</p>
           <p>{image.weight}</p>
